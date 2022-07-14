@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Poppins', sans-serif;
+}
+body {
+   font-family: 'Poppins', sans-serif;
+   background-color: #C5CAFF;
+   background-image: url(../images/bg.png);
+   background-size: cover;
+}
+.register__form__container {
+   background: rgba(255, 255, 255, 0.4);
+   backdrop-filter: blur(10px);
+   border-radius: 10px;
+   max-width: 500px;
+   padding: 40px;
+   position: fixed; top: 50%; left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+}
+input {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 100%;
+   width: 420px;
+   height: 60px;
+   background: #ffffff;
+   border-radius: 10px;
+   border: 0px;
+   padding-left: 22px;
+}
+input:hover {
+   outline: 2px solid #FF7AB6;
+}
+input:focus {
+   outline: 3px solid #EF5699;
+   transition: 0.2s;
+}
+.form__title {
+   text-align: center;
+   color: #FFFFFF;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 100%;
+   margin-bottom: 20px;
+}
+.form__paragraph {
+   text-align: center;
+   color: #FFFFFF;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 100%;
+   margin-bottom: 20px;
+}
+.form__field {
+   margin-bottom: 20px;
+}
+.fa-google {
+   color: #EF5699;
+   background-color: #ffffff;
+   border-radius: 10px;
+   padding: 16px 31.66px;
+   font-size: 28px;
+   margin-right: 15px;
+}
+.fa-linkedin {
+   color: #EF5699;
+   background-color: #ffffff;
+   border-radius: 10px;
+   padding: 16px 32.76px;
+   font-size: 28px;
+   margin-right: 15px;
+}
+.fa-twitter {
+   color: #EF5699;
+   background-color: #ffffff;
+   border-radius: 10px;
+   padding: 16px 31px;
+   font-size: 28px;
+   margin-right: 15px;
+}
+.fa-facebook {
+   color: #EF5699;
+   background-color: #ffffff;
+   border-radius: 10px;
+   padding: 16px 31px;
+   font-size: 28px;
+}
+.fa-brands:hover {
+   background: #EF5699;
+   transition: 0.5s;
+   color: #FFFFFF;
+}
+.reg__btn {
+   background: #EF5699;
+   border-radius: 10px;
+   border: 0px;
+   color: #FFFFFF;
+   padding: 22px 44px;
+   font-size: 16px;
+   line-height: 100%;
+   cursor: pointer;
+   margin: 20px auto;
+   display: block;
+   transition: 0.3s;
+}
+.reg__btn:hover {
+   transition: 0.3s;
+   background: #FF7AB6;
+}
+.form__sign {
+   color: #ffffff;
+   font-weight: 400;
+}
+.form__sign__link {
+   text-decoration: none;
+   color: #EF5699;
+   font-weight: 500;
+   transition: 0.3s;
+}
+.form__sign__link:hover {
+   color: #FF7AB6;
+   transition: 0.3s;
+}
+
+/*Adaptive*/
+
+@media (max-width:1280px) {
+   .register__form__container {
+      max-width: 420px;
+   }
+   input {
+      width: 340px;
+      height: 50px;
+      font-size: 14px;
+   }
+   .form__title {
+      font-size: 22px;
+   }
+   .form__paragraph {
+      font-size: 14px;
+   }
+   .fa-google {
+      padding: 13px 23.57px;
+      font-size: 24px;
+   }
+   .fa-linkedin {
+      padding: 13px 24.50px;
+      font-size: 24px;
+   }
+   .fa-twitter {
+      padding: 13px 23.01px;
+      font-size: 24px;
+   }
+   .fa-facebook {
+      padding: 13px 23.01px;
+      font-size: 24px;
+   }
+   .reg__btn {
+      padding: 20px 40px;
+      font-size: 14px;
+   }
+   .form__sign {
+      font-size: 14px;
+   }
+}
+
+@media (max-width:1000px) {
+   .register__form__container {
+      max-width: 320px;
+      padding: 20px;
+   }
+   input {
+      width: 280px;
+      height: 50px;
+      font-size: 14px;
+   }
+   .form__field {
+      margin-bottom: 10px;
+   }
+   .form__title {
+      font-size: 18px;
+      margin-bottom: 10px;
+   }
+   .form__paragraph {
+      font-size: 12px;
+      margin-bottom: 10px;
+   }
+   .fa-google {
+      padding: 16px 22.68px;
+      font-size: 18px;
+      margin-right: 5px;
+   }
+   .fa-linkedin {
+      padding: 16px 23.38px;
+      font-size: 18px;
+      margin-right: 5px;
+   }
+   .fa-twitter {
+      padding: 16px 22.25px;
+      font-size: 18px;
+      margin-right: 5px;
+   }
+   .fa-facebook {
+      padding: 16px 22.25px;
+      font-size: 18px;
+   }
+   .reg__btn {
+      padding: 15px 30px;
+      font-size: 13px;
+      margin: 10px auto;
+   }
+   .form__sign {
+      font-size: 12px;
+   }
+}
